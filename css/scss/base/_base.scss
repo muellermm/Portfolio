@@ -21,25 +21,14 @@ body{
 	padding: 0;
 }
 
-header{
-	position   : fixed;
-	height     : 70px;
-	width      : 100%;
-	padding    : 0;
-	top        : 0;
-	left       : 0;
-	margin     : 0;
-	padding    : 0;
-	z-index    : 2;
-}
-
 h1, .mp-intro {
 	font-family : $font-family;
 	font-size   : em(40px);
 	line-height : (50/40);
 	font-weight : $font--medium;
 	margin      : 0;
-	color       : $color-white; 
+	color       : $color-white;
+	margin-bottom: 100px;
 }
 
 h2, .mp-heading {
@@ -103,6 +92,6 @@ a{
 	}
 	
 	&:active, &:visited {
-		color: $color-dark;
+		color: $color-prim;
 	}
 }
