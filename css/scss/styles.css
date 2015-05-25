@@ -456,10 +456,10 @@ header {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: right;
-  height: 660px; }
+  height: 660px;
+  padding-top: 65px; }
 
 .logo {
-  margin-top: 65px;
   margin-bottom: 100px;
   width: 86px;
   height: 61px;
