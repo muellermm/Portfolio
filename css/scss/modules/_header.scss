@@ -1,0 +1,106 @@
+// ===================
+// header styles 
+// ===================
+
+//header navigation styles 
+
+
+/*Header */
+
+
+.headerWraper{
+	max-width      : 94%;
+	margin-left    : auto;
+	margin-right   : auto;
+}
+
+.site-logo__white{
+   position: absolute;
+   float        :left;
+   top          :15px;
+   width        :72px;
+}
+
+.site-logo__blue{
+   position     : absolute;
+   top          :-19px;
+   float        :left;
+   width        :72px;
+}
+
+    
+        /*iphone*/
+        @media only screen and (device-aspect-ratio: 40/71) { 
+                .site-logo__white{
+                    top   :22px;
+                    width :150px;
+                }
+
+                .site-logo__blue{
+                   top          :-24px;
+                   width        :150px;
+                }
+        }
+
+        /*iphone 6 */
+        @media only screen and (min-device-width : 375px) and (max-device-width : 667px) { 
+                .site-logo__white{
+                    top   :22px;
+                    width :200px;
+                }
+
+                .site-logo__blue{
+                   top          :-24px;
+                   width        :200px;
+                }
+        }
+
+        /*android*/
+        @media screen and (device-width: 360px) and (device-height: 640px) { 
+                .site-logo__white{
+                    top   :22px;
+                    width :200px;
+                }
+
+                .site-logo__blue{
+                   top          :-24px;
+                   width        :200px;
+                }
+        }
+
+        /*IE10+ Desktop "" fixes werid posistioning in IE ""*/
+        @media all and (-ms-high-contrast: none), (-ms-high-contrast: active)  { 
+              
+                .site-logo__white{
+                   top          :-40px;
+                }
+
+                .site-logo__blue{
+                   top          :-48px;
+                }
+            
+        }
+
+
+
+/*
+@media only screen and (max-width : 768px) {
+ 
+    
+    .site-logo__white{
+        top   :22px;
+        width :150px;
+    }
+
+    .site-logo__blue{
+       top          :-24px;
+       width        :150px;
+    }
+    
+    .headerNav{
+	float          : right;
+	margin-top     : 45px;
+	padding-right  : 3%;
+	}
+    
+}*/

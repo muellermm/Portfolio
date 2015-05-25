@@ -1,0 +1,108 @@
+// ===================
+// Base Styles scss 
+// ===================
+
+// What elements look like by default
+
+
+html, body{
+	width   :100%;
+	height  :100%;
+}
+
+
+body{
+	font-size   : $base__font-size;
+	line-height : ($base__line/$base__font-size);
+	font-family : $font-family;
+	font-smoothing  : antialiased;
+	text-rendering: optimizeLegibility;
+	margin: 0;
+	padding: 0;
+}
+
+header{
+	position   : fixed;
+	height     : 70px;
+	width      : 100%;
+	padding    : 0;
+	top        : 0;
+	left       : 0;
+	margin     : 0;
+	padding    : 0;
+	z-index    : 2;
+}
+
+h1, .mp-intro {
+	font-family : $font-family;
+	font-size   : em(40px);
+	line-height : (50/40);
+	font-weight : $font--medium;
+	margin      : 0;
+	color       : $color-white; 
+}
+
+h2, .mp-heading {
+	font-family : $font-family;
+	font-size   : em(50px);
+	line-height : (64/50);
+	font-weight : $font--medium;
+	color       : $color-prim;
+}
+
+
+h3, .mp-description {
+	font-family : $font-family;
+	font-size   : em(24px);
+	line-height : (32/24);
+	font-weight : $font--book;
+	color       : $color-dark; 
+}
+
+h4, .mp-role {
+	font-family : $font-family;
+	font-size   : em(18px);
+	line-height : (24/18);
+	font-weight : $font--book;
+	font-style  : italic;
+	color       : $color-gray;
+}
+
+
+h5, .mp-greeting {
+	font-family : $font-family;
+	font-size   : em(70px);
+	line-height : (86/70);
+	font-weight : 500;
+	margin      : 0;
+	color       : $color-white; 
+}
+
+h6{
+	font-family : $font-family;
+	font-size   : em(18px);
+	line-height : (24px/18px);
+	font-weight : $font--medium;
+	color       : $color-white;
+}
+
+p, .mp-copy {
+	font-family : $font-family;
+	font-size   : em(20px);
+	line-height : (30/20);
+	font-weight : $font--book;
+	color       : $color-white;
+}
+
+a{
+	color: $color-prim;
+	text-decoration: none;
+	
+	&:hover, &:focus {
+		color: $color-dark;
+	}
+	
+	&:active, &:visited {
+		color: $color-dark;
+	}
+}
