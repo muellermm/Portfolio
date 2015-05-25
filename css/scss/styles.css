@@ -278,8 +278,8 @@ sub {
    ========================================================================== */
 ul,
 ol {
-  margin: 1em 0;
-  padding: 0 0 0 40px; }
+  margin: 0;
+  padding: 0 0 0 0px; }
 
 dd {
   margin: 0 0 0 40px; }
@@ -452,19 +452,13 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-header {
+.mp-header {
   background: #000 url("../../img/marc.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: right;
-  height: 660px;
-  padding-top: 45px; }
-
-.logo {
-  margin-bottom: 100px;
-  width: 60px;
-  height: 43px;
-  display: block; }
+  background-position: top right;
+  padding-top: 45px;
+  padding-bottom: 100px; }
 
 .mp-content {
   padding-top: 100px;
@@ -479,10 +473,22 @@ header {
   .mp-project:last-of-type {
     margin-bottom: 0px; }
 
-footer {
+.mp-footer {
   background: #d71920;
   padding-top: 100px;
   padding-bottom: 80px; }
+  .mp-footer ul {
+    display: block;
+    margin: 0 0 1.5em 0; }
+  .mp-footer li {
+    display: inline-block;
+    list-style: none;
+    margin-right: 1em;
+    margin-left: 0; }
+  .mp-footer svg {
+    width: 30px;
+    height: 30px;
+    fill: #fff; }
 
 hr {
   border: 0;
@@ -490,25 +496,29 @@ hr {
   margin-bottom: 35px;
   background-image: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.25), transparent); }
 
-.fullWidth {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: initial; }
+.pr-header {
+  padding-top: 45px;
+  padding-bottom: 100px; }
 
-.center {
-  -moz-transform: translate(30%, 0);
-  -o-transform: translate(30%, 0);
-  -ms-transform: translate(30%, 0);
-  -webkit-transform: translate(30%, 0);
-  transform: translate(30%, 0);
-  -webkit-transform: translate3d(30%, 0, 1px); }
+.center-wrapper {
+  display: table;
+  width: 100%; }
+  .center-wrapper .center {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle; }
 
 .rounded {
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   -ms-border-radius: 6px;
   border-radius: 6px; }
+
+.logo {
+  margin-bottom: 100px;
+  width: 60px;
+  height: 43px;
+  display: block; }
 
 /*Header */
 .headerWraper {
