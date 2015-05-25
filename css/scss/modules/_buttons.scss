@@ -27,11 +27,6 @@
 		color: $color-white;
 		background-color: $color-prim;
 	}
-	
-	&:active, &:visited {
-		color: $color-prim;
-		border-color: $color-prim;
-	}
 }
 
 .button--prim {
@@ -44,11 +39,6 @@
 	&:hover, &:focus {
 		color: $color-black;
 		background-color: $color-white;
-	}
-	
-	&:active, &:visited {
-		color: $color-white;
-		border-color: $color-white;
 	}
 }
 
@@ -69,8 +59,7 @@
 		background-color: $color-white;
 	}
 	
-	&:active, &:visited {
+	&:visited, &:active {
 		color: $color-white;
-		border-color: $color-white;
 	}
 }

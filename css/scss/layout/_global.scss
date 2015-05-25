@@ -39,11 +39,19 @@ footer {
 		list-style: none;
 		margin-right: 1em;
 		margin-left: 0;
+		
+		&:last-of-type {
+			margin-right: 0;
+		}
 	}
 	
 	& svg {
 		width: 30px;
 		height: 30px;
 		fill: $color-white;
+		
+		&:hover, &:focus {
+			fill: $color-dark;
+		}
 	}
 }

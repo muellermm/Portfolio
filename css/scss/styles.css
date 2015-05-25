@@ -515,10 +515,14 @@ footer {
     list-style: none;
     margin-right: 1em;
     margin-left: 0; }
+    footer li:last-of-type {
+      margin-right: 0; }
   footer svg {
     width: 30px;
     height: 30px;
     fill: #fff; }
+    footer svg:hover, footer svg:focus {
+      fill: #323132; }
 
 /*Header */
 .headerWraper {
@@ -667,9 +671,6 @@ footer {
   .button:hover, .button:focus {
     color: #fff;
     background-color: #d71920; }
-  .button:active, .button:visited {
-    color: #d71920;
-    border-color: #d71920; }
 
 .button--prim {
   font-size: 1.25em;
@@ -679,9 +680,6 @@ footer {
   .button--prim:hover, .button--prim:focus {
     color: #000;
     background-color: #fff; }
-  .button--prim:active, .button--prim:visited {
-    color: #fff;
-    border-color: #fff; }
 
 .button--sec {
   font-size: 1em;
@@ -694,8 +692,7 @@ footer {
   .button--sec:hover, .button--sec:focus {
     color: #d71920;
     background-color: #fff; }
-  .button--sec:active, .button--sec:visited {
-    color: #fff;
-    border-color: #fff; }
+  .button--sec:visited, .button--sec:active {
+    color: #fff; }
 
 /*# sourceMappingURL=styles.css.map */
