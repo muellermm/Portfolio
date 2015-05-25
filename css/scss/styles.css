@@ -475,7 +475,7 @@ header {
   display: inline-block; }
 
 .mp-project {
-  margin-bottom: 70px; }
+  margin-bottom: 35px; }
   .mp-project:last-of-type {
     margin-bottom: 0px; }
 
@@ -483,6 +483,12 @@ footer {
   background: #d71920;
   padding-top: 100px;
   padding-bottom: 80px; }
+
+hr {
+  border: 0;
+  height: 1px;
+  margin-bottom: 35px;
+  background-image: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.25), transparent); }
 
 .fullWidth {
   width: 100%;
