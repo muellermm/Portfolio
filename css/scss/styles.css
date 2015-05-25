@@ -473,23 +473,6 @@ table {
   .mp-project:last-of-type {
     margin-bottom: 0px; }
 
-.mp-footer {
-  background: #d71920;
-  padding-top: 100px;
-  padding-bottom: 80px; }
-  .mp-footer ul {
-    display: block;
-    margin: 0 0 1.5em 0; }
-  .mp-footer li {
-    display: inline-block;
-    list-style: none;
-    margin-right: 1em;
-    margin-left: 0; }
-  .mp-footer svg {
-    width: 30px;
-    height: 30px;
-    fill: #fff; }
-
 hr {
   border: 0;
   height: 1px;
@@ -519,6 +502,23 @@ hr {
   width: 60px;
   height: 43px;
   display: block; }
+
+footer {
+  background: #d71920;
+  padding-top: 100px;
+  padding-bottom: 80px; }
+  footer ul {
+    display: block;
+    margin: 0 0 1.5em 0; }
+  footer li {
+    display: inline-block;
+    list-style: none;
+    margin-right: 1em;
+    margin-left: 0; }
+  footer svg {
+    width: 30px;
+    height: 30px;
+    fill: #fff; }
 
 /*Header */
 .headerWraper {

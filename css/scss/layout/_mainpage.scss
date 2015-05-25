@@ -30,31 +30,6 @@
 	}
 }
 
-.mp-footer {
-	background: $color-prim;
-//	height: 680px;
-	padding-top: 100px;
-	padding-bottom: 80px;
-	
-	& ul {
-		display: block;
-		margin: 0 0 1.5em 0;
-	}
-	
-	& li {
-		display: inline-block;
-		list-style: none;
-		margin-right: 1em;
-		margin-left: 0;
-	}
-	
-	& svg {
-		width: 30px;
-		height: 30px;
-		fill: $color-white;
-	}
-}
-
 hr {
 	border: 0;
 	height: 1px;
