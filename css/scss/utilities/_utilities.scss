@@ -5,11 +5,11 @@
 //transform:translate (x,y) controls slide placement and display
 
 @mixin transform($transforms) {
-	   -moz-transform: $transforms;
-	     -o-transform: $transforms;
-	    -ms-transform: $transforms;
-	-webkit-transform: $transforms;
-          transform: $transforms;
+	   -moz-transform: 	$transforms;
+	     -o-transform: 	$transforms;
+	    -ms-transform: 	$transforms;
+	-webkit-transform: 	$transforms;
+          transform: 	$transforms;
 }
 
 @mixin translate ($x, $y) {
@@ -18,10 +18,10 @@
 }
 
 @mixin radius {
--webkit-border-radius: $radius;
- -moz-border-radius: $radius;
-  -ms-border-radius: $radius;
-	  border-radius: $radius;
+-webkit-border-radius: 	$radius;
+ -moz-border-radius: 	$radius;
+  -ms-border-radius: 	$radius;
+	  border-radius: 	$radius;
 }
 
 

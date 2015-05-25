@@ -17,3 +17,26 @@ header {
 	height: 61px;
 	display: block;
 }
+
+.mp-content {
+	padding-top: 100px;
+}
+
+.mp-project-img {
+	width: 100%;
+	display: inline-block;
+}
+
+.mp-project {
+	margin-bottom: 70px;
+	
+	:last-of-type {
+		margin-bottom: 70px;
+	}
+}
+
+footer {
+	background: $color-prim;
+	height: 680px;
+	padding-top: 100px;
+}

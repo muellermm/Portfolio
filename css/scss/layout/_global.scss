@@ -8,3 +8,11 @@
 	margin-right: auto;
 	max-width: initial;
 }
+
+.center {
+	@include translate(30%,0);
+}
+
+.rounded {
+	@include radius;
+}
