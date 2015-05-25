@@ -1,3 +1,19 @@
 // ===================
 // Main Page
 // ===================
+
+header {
+	background: $color-black url("../../img/marc.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: right;
+	height: 660px;
+}
+
+.logo {
+	margin-top: 65px;
+	margin-bottom: 100px;
+	width: 86px;
+	height: 61px;
+	display: block;
+}
