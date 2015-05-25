@@ -20,10 +20,9 @@ body {
   font-size: 16px;
   line-height: 1.5;
   font-family: "franklin-gothic-urw", sans-serif;
-  font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  letter-spacing: .05em; }
 
 h1, .mp-intro {
   font-family: "franklin-gothic-urw", sans-serif;
@@ -36,17 +35,19 @@ h1, .mp-intro {
 
 h2, .mp-heading {
   font-family: "franklin-gothic-urw", sans-serif;
-  font-size: 3.125em;
-  line-height: 1.28;
+  font-size: 2.5em;
+  line-height: 1.35;
   font-weight: 500;
-  color: #d71920; }
+  color: #d71920;
+  margin-bottom: 10px; }
 
 h3, .mp-description {
   font-family: "franklin-gothic-urw", sans-serif;
   font-size: 1.5em;
-  line-height: 1.33333;
-  font-weight: 400;
-  color: #323132; }
+  line-height: 1.5;
+  font-weight: 300;
+  color: #323132;
+  margin-bottom: 10px; }
 
 h4, .mp-role {
   font-family: "franklin-gothic-urw", sans-serif;
@@ -75,7 +76,7 @@ p, .mp-copy {
   font-family: "franklin-gothic-urw", sans-serif;
   font-size: 1.25em;
   line-height: 1.5;
-  font-weight: 400;
+  font-weight: 300;
   color: #fff; }
 
 a {
@@ -457,16 +458,17 @@ header {
   background-attachment: fixed;
   background-position: right;
   height: 660px;
-  padding-top: 65px; }
+  padding-top: 45px; }
 
 .logo {
   margin-bottom: 100px;
-  width: 86px;
-  height: 61px;
+  width: 60px;
+  height: 43px;
   display: block; }
 
 .mp-content {
-  padding-top: 100px; }
+  padding-top: 100px;
+  padding-bottom: 80px; }
 
 .mp-project-img {
   width: 100%;
@@ -474,13 +476,13 @@ header {
 
 .mp-project {
   margin-bottom: 70px; }
-  .mp-project :last-of-type {
-    margin-bottom: 70px; }
+  .mp-project:last-of-type {
+    margin-bottom: 0px; }
 
 footer {
   background: #d71920;
-  height: 680px;
-  padding-top: 100px; }
+  padding-top: 100px;
+  padding-bottom: 80px; }
 
 .fullWidth {
   width: 100%;
@@ -625,14 +627,11 @@ footer {
     width: 100%;
     height: 100%;
     object-fit: cover; } }
-.button {
+.button, .button--prim, .button--sec {
   font-family: "franklin-gothic-urw", sans-serif;
-  font-size: 1.25em;
   line-height: 1;
   font-weight: 500;
   display: inline-block;
-  padding: 10px 20px;
-  color: #d71920;
   text-align: center;
   text-decoration: none;
   white-space: nowrap;
@@ -641,39 +640,45 @@ footer {
   -moz-border-radius: 6px;
   -ms-border-radius: 6px;
   border-radius: 6px;
-  border: 3px solid #d71920;
   cursor: pointer;
   box-sizing: border-box; }
+
+.button {
+  font-size: 0.875em;
+  padding: 8px 12px;
+  color: #d71920;
+  border: 2px solid #d71920; }
   .button:hover, .button:focus {
-    color: #323132;
-    border-color: #323132; }
+    color: #fff;
+    background-color: #d71920; }
   .button:active, .button:visited {
     color: #d71920;
     border-color: #d71920; }
 
 .button--prim {
-  font-family: "franklin-gothic-urw", sans-serif;
-  font-size: 1.625em;
-  line-height: 1;
-  font-weight: 500;
-  display: inline-block;
-  padding: 12px 20px;
+  font-size: 1.25em;
+  padding: 10px 14px;
   color: #fff;
-  text-align: center;
-  text-decoration: none;
-  white-space: nowrap;
-  background-color: transparent;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  -ms-border-radius: 6px;
-  border-radius: 6px;
-  border: 3px solid #fff;
-  cursor: pointer;
-  box-sizing: border-box; }
+  border: 3px solid #fff; }
   .button--prim:hover, .button--prim:focus {
-    color: #d71920;
-    border-color: #d71920; }
+    color: #000;
+    background-color: #fff; }
   .button--prim:active, .button--prim:visited {
+    color: #fff;
+    border-color: #fff; }
+
+.button--sec {
+  font-size: 1em;
+  padding: 8px 14px;
+  color: #fff;
+  border: 3px solid #fff;
+  margin-right: 1em; }
+  .button--sec:last-of-type {
+    margin-right: 0; }
+  .button--sec:hover, .button--sec:focus {
+    color: #d71920;
+    background-color: #fff; }
+  .button--sec:active, .button--sec:visited {
     color: #fff;
     border-color: #fff; }
 

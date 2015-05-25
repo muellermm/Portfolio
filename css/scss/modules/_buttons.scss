@@ -2,26 +2,30 @@
 // Button Styles
 // ===================
 
-.button {
+%btn {
 	font-family: $font-family;
-	font-size: em(20px);
 	line-height: 1;
 	font-weight: $font--medium;
 	display: inline-block;
-	padding: 10px 20px;
-	color: $color-prim;
 	text-align: center;
 	text-decoration: none;
 	white-space: nowrap;
 	background-color: transparent;
 	@include radius;
-	border: 3px solid $color-prim;
 	cursor: pointer;
 	box-sizing: border-box;
+}
+
+.button {
+	@extend %btn;
+	font-size: em(14px);
+	padding: 8px 12px;
+	color: $color-prim;
+	border: 2px solid $color-prim;
 	
 	&:hover, &:focus {
-		color: $color-dark;
-		border-color: $color-dark;
+		color: $color-white;
+		background-color: $color-prim;
 	}
 	
 	&:active, &:visited {
@@ -31,25 +35,38 @@
 }
 
 .button--prim {
-	font-family: $font-family;
-	font-size: em(26px);
-	line-height: 1;
-	font-weight: $font--medium;
-	display: inline-block;
-	padding: 12px 20px;
+	@extend %btn;
+	font-size: em(20px);
+	padding: 10px 14px;
 	color: $color-white;
-	text-align: center;
-	text-decoration: none;
-	white-space: nowrap;
-	background-color: transparent;
-	@include radius;
 	border: 3px solid $color-white;
-	cursor: pointer;
-	box-sizing: border-box;
+	
+	&:hover, &:focus {
+		color: $color-black;
+		background-color: $color-white;
+	}
+	
+	&:active, &:visited {
+		color: $color-white;
+		border-color: $color-white;
+	}
+}
+
+.button--sec {
+	@extend %btn;
+	font-size: em(16px);
+	padding: 8px 14px;
+	color: $color-white;
+	border: 3px solid $color-white;
+	margin-right: 1em;
+	
+	&:last-of-type {
+		margin-right: 0;
+	}
 	
 	&:hover, &:focus {
 		color: $color-prim;
-		border-color: $color-prim;
+		background-color: $color-white;
 	}
 	
 	&:active, &:visited {
