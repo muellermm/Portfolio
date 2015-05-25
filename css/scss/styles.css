@@ -25,24 +25,14 @@ body {
   margin: 0;
   padding: 0; }
 
-header {
-  position: fixed;
-  height: 70px;
-  width: 100%;
-  padding: 0;
-  top: 0;
-  left: 0;
-  margin: 0;
-  padding: 0;
-  z-index: 2; }
-
 h1, .mp-intro {
   font-family: "franklin-gothic-urw", sans-serif;
   font-size: 2.5em;
   line-height: 1.25;
   font-weight: 500;
   margin: 0;
-  color: #fff; }
+  color: #fff;
+  margin-bottom: 100px; }
 
 h2, .mp-heading {
   font-family: "franklin-gothic-urw", sans-serif;
@@ -94,7 +84,7 @@ a {
   a:hover, a:focus {
     color: #323132; }
   a:active, a:visited {
-    color: #323132; }
+    color: #d71920; }
 
 /*! normalize.css 2011-08-31T22:02 UTC · http://github.com/necolas/normalize.css */
 /* =============================================================================
@@ -461,6 +451,26 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+header {
+  background: #000 url("../../img/marc.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: right;
+  height: 660px; }
+
+.logo {
+  margin-top: 65px;
+  margin-bottom: 100px;
+  width: 86px;
+  height: 61px;
+  display: block; }
+
+.fullWidth {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: initial; }
+
 /*Header */
 .headerWraper {
   max-width: 94%;
@@ -584,5 +594,58 @@ table {
     width: 100%;
     height: 100%;
     object-fit: cover; } }
+.button {
+  font-family: "franklin-gothic-urw", sans-serif;
+  font-size: 1.25em;
+  line-height: 1;
+  font-weight: 500;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #d71920;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  border-radius: 6px;
+  border: 3px solid #d71920;
+  cursor: pointer;
+  box-sizing: border-box; }
+  .button:hover, .button:focus {
+    color: #323132;
+    border-color: #323132; }
+  .button:active, .button:visited {
+    color: #d71920;
+    border-color: #d71920; }
+
+.button--prim {
+  font-family: "franklin-gothic-urw", sans-serif;
+  font-size: 1.625em;
+  line-height: 1;
+  font-weight: 500;
+  display: inline-block;
+  padding: 12px 20px;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  border-radius: 6px;
+  border: 3px solid #fff;
+  cursor: pointer;
+  box-sizing: border-box; }
+  .button--prim:hover, .button--prim:focus {
+    color: #d71920;
+    border-color: #d71920; }
+  .button--prim:active, .button--prim:visited {
+    color: #fff;
+    border-color: #fff; }
 
 /*# sourceMappingURL=styles.css.map */
