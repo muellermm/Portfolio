@@ -54,9 +54,10 @@ h4, .mp-role {
 	font-family  : $font-family;
 	font-size    : em(18px);
 	line-height  : (24/18);
-	font-weight  : $font--book;
+	font-weight  : $font--light;
 	font-style   : italic;
 	color        : $color-gray;
+	letter-spacing: .005em;
 }
 
 

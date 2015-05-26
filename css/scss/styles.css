@@ -54,9 +54,10 @@ h4, .mp-role {
   font-family: "franklin-gothic-urw", sans-serif;
   font-size: 1.125em;
   line-height: 1.33333;
-  font-weight: 400;
+  font-weight: 300;
   font-style: italic;
-  color: #9B9B9B; }
+  color: #9B9B9B;
+  letter-spacing: .005em; }
 
 h5, .mp-greeting {
   font-family: "franklin-gothic-urw", sans-serif;
@@ -172,9 +173,6 @@ textarea {
    ========================================================================== */
 a {
   color: #d71920; }
-
-a:visited {
-  color: none; }
 
 /*
  * Addresses outline displayed oddly in Chrome
@@ -483,7 +481,7 @@ table {
 
 .pr-header {
   padding-top: 45px;
-  padding-bottom: 100px; }
+  padding-bottom: 45px; }
 
 .pr-copy {
   font-family: "franklin-gothic-urw", sans-serif;
@@ -491,6 +489,9 @@ table {
   line-height: 1.5;
   font-weight: 300;
   color: #323132; }
+
+.pr-content {
+  padding-bottom: 80px; }
 
 .pr-block {
   margin-bottom: 35px; }
@@ -708,6 +709,10 @@ hr {
     background-color: #d71920; }
   .button:visited, .button:active {
     color: #d71920; }
+  .button .large {
+    font-size: 1em;
+    padding: 8px 14px;
+    border: 3px solid #d71920; }
 
 .button--prim {
   font-size: 1.25em;
