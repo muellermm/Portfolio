@@ -33,21 +33,22 @@ h1, .mp-intro {
   color: #fff;
   margin-bottom: 100px; }
 
-h2, .mp-heading {
+h2, .mp-heading, .pr-title {
   font-family: "franklin-gothic-urw", sans-serif;
   font-size: 2.5em;
   line-height: 1.35;
   font-weight: 500;
   color: #d71920;
-  margin-bottom: 10px; }
+  margin-bottom: 0.625em; }
 
-h3, .mp-description {
+h3, .mp-description, .pr-intro {
   font-family: "franklin-gothic-urw", sans-serif;
   font-size: 1.5em;
   line-height: 1.5;
   font-weight: 300;
   color: #323132;
-  margin-bottom: 10px; }
+  margin-bottom: 0.625em;
+  letter-spacing: normal; }
 
 h4, .mp-role {
   font-family: "franklin-gothic-urw", sans-serif;
@@ -65,12 +66,13 @@ h5, .mp-greeting {
   margin: 0;
   color: #fff; }
 
-h6 {
+h6, .pr-heading {
   font-family: "franklin-gothic-urw", sans-serif;
-  font-size: 1.125em;
-  line-height: 1.33333;
+  font-size: 1.875em;
+  line-height: 1.4;
   font-weight: 500;
-  color: #fff; }
+  color: #d71920;
+  margin-bottom: 0.625em; }
 
 p, .mp-copy {
   font-family: "franklin-gothic-urw", sans-serif;
@@ -459,6 +461,8 @@ table {
   background-position: top right;
   padding-top: 45px;
   padding-bottom: 100px; }
+  .mp-header .logo {
+    margin-bottom: 100px; }
 
 .mp-content {
   padding-top: 100px;
@@ -473,15 +477,43 @@ table {
   .mp-project:last-of-type {
     margin-bottom: 0px; }
 
-hr {
-  border: 0;
-  height: 1px;
-  margin-bottom: 35px;
-  background-image: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.25), transparent); }
+.mp-footer {
+  padding-top: 100px;
+  padding-bottom: 80px; }
 
 .pr-header {
   padding-top: 45px;
   padding-bottom: 100px; }
+
+.pr-copy {
+  font-family: "franklin-gothic-urw", sans-serif;
+  font-size: 1.25em;
+  line-height: 1.5;
+  font-weight: 300;
+  color: #323132; }
+
+.pr-block {
+  margin-bottom: 35px; }
+  .pr-block:last-of-type {
+    margin-bottom: 0px; }
+  .pr-block ul {
+    display: block;
+    margin: 0; }
+  .pr-block li {
+    list-style: circle;
+    margin: 0 0 .5em 1em; }
+
+.pr-greeting {
+  font-family: "franklin-gothic-urw", sans-serif;
+  font-size: 2.5em;
+  line-height: 1.35;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 0.625em; }
+
+.pr-footer {
+  padding-top: 50px;
+  padding-bottom: 50px; }
 
 .center-wrapper {
   display: table;
@@ -498,15 +530,12 @@ hr {
   border-radius: 6px; }
 
 .logo {
-  margin-bottom: 100px;
   width: 60px;
   height: 43px;
   display: block; }
 
 footer {
-  background: #d71920;
-  padding-top: 100px;
-  padding-bottom: 80px; }
+  background: #d71920; }
   footer ul {
     display: block;
     margin: 0 0 1.5em 0; }
@@ -523,6 +552,12 @@ footer {
     fill: #fff; }
     footer svg:hover, footer svg:focus {
       fill: #323132; }
+
+hr {
+  border: 0;
+  height: 1px;
+  margin-bottom: 35px;
+  background-image: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.25), transparent); }
 
 /*Header */
 .headerWraper {
@@ -680,6 +715,8 @@ footer {
   .button--prim:hover, .button--prim:focus {
     color: #000;
     background-color: #fff; }
+  .button--prim:visited, .button--prim:active {
+    color: #fff; }
 
 .button--sec {
   font-size: 1em;
