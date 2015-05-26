@@ -480,6 +480,13 @@ table {
   padding-top: 100px;
   padding-bottom: 80px; }
 
+.easter-egg {
+  font-size: .7em;
+  font-weight: 500;
+  margin: 0;
+  color: #fff;
+  vertical-align: text-top; }
+
 .pr-header {
   padding-top: 45px;
   padding-bottom: 45px; }
