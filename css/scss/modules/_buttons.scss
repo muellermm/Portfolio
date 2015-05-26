@@ -27,6 +27,10 @@
 		color: $color-white;
 		background-color: $color-prim;
 	}
+	
+	&:visited, &:active {
+		color: $color-prim;
+	}
 }
 
 .button--prim {

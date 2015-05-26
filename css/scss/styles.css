@@ -706,6 +706,8 @@ hr {
   .button:hover, .button:focus {
     color: #fff;
     background-color: #d71920; }
+  .button:visited, .button:active {
+    color: #d71920; }
 
 .button--prim {
   font-size: 1.25em;
