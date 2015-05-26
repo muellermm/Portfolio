@@ -40,6 +40,10 @@
 		color: $color-black;
 		background-color: $color-white;
 	}
+	
+	&:visited, &:active {
+		color: $color-white;
+	}
 }
 
 .button--sec {
