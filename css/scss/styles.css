@@ -87,8 +87,6 @@ a {
   text-decoration: none; }
   a:hover, a:focus {
     color: #323132; }
-  a:active, a:visited {
-    color: #d71920; }
 
 /*! normalize.css 2011-08-31T22:02 UTC · http://github.com/necolas/normalize.css */
 /* =============================================================================
@@ -173,6 +171,9 @@ textarea {
    ========================================================================== */
 a {
   color: #d71920; }
+
+a:visited {
+  color: none; }
 
 /*
  * Addresses outline displayed oddly in Chrome
@@ -707,8 +708,6 @@ hr {
   .button:hover, .button:focus {
     color: #fff;
     background-color: #d71920; }
-  .button:visited, .button:active {
-    color: #d71920; }
   .button .large {
     font-size: 1em;
     padding: 8px 14px;
@@ -722,8 +721,6 @@ hr {
   .button--prim:hover, .button--prim:focus {
     color: #000;
     background-color: #fff; }
-  .button--prim:visited, .button--prim:active {
-    color: #fff; }
 
 .button--sec {
   font-size: 1em;
@@ -736,7 +733,5 @@ hr {
   .button--sec:hover, .button--sec:focus {
     color: #d71920;
     background-color: #fff; }
-  .button--sec:visited, .button--sec:active {
-    color: #fff; }
 
 /*# sourceMappingURL=styles.css.map */

@@ -28,10 +28,6 @@
 		background-color: $color-prim;
 	}
 	
-	&:visited, &:active {
-		color: $color-prim;
-	}
-	
 	& .large {
 		font-size: em(16px);
 		padding: 8px 14px;
@@ -50,10 +46,6 @@
 		color: $color-black;
 		background-color: $color-white;
 	}
-	
-	&:visited, &:active {
-		color: $color-white;
-	}
 }
 
 .button--sec {
@@ -71,9 +63,5 @@
 	&:hover, &:focus {
 		color: $color-prim;
 		background-color: $color-white;
-	}
-	
-	&:visited, &:active {
-		color: $color-white;
 	}
 }
